@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Escáner de Recibos - OCR</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h2>Escáner de Recibos 🧾📷</h2>
+
+<input id="fileInput" type="file" accept="image/*" capture="environment"/>
+
+<div id="previewContainer">
+    <img id="preview" alt="Vista previa"/>
+</div>
+
+<button id="processBtn">Procesar OCR</button>
+
+<div id="resultContainer">
+    <h3>Texto detectado:</h3>
+    <pre id="result"></pre>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
